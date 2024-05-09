@@ -12,21 +12,29 @@ p.info {
 }
 
 h1 {
-	background-color: #7f7fcf;
+	text-shadow: navy 1px 0 10px;
+	color: white;
 }
 
 h2 {
-	border: solid 1px black;
-	margin: 5px;
+	font-family: cursive;
+	background: linear-gradient(0.25turn, white, #ffefaf);
+	color: #3f3faf;
 }
+img.hiro {
+	float: right;
 
+    width: 50px;
+    height: 50px;
+    margin: 10px 0 10px 10px;
+}
 div#zentai {
 	display: grid;                      
     grid-template-columns: 1fr 1fr; /* 3列にする．幅は 1:2:2 の比率*/
-    grid-auto-rows: 100px 100px;        /* 高さは 100px */
-    grid-gap: 10px;                     /* 隣り合う行（列）の間隔を 10px に*/
+    grid-auto-rows: 200px 200px;        /* 高さは 100px */
+    grid-gap: 5px;                     /* 隣り合う行（列）の間隔を 10px に*/
 
-    width: 500px;
+   
 }
 
 div#zentai > div {
