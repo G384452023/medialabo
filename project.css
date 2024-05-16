@@ -1,0 +1,13 @@
+body {
+    font-feature-settings: "smcp", "zero";
+}
+div {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #232323;
+    background: #fff8e8;
+    border-left: solid 10px #ffc06e;
+}
+h1 {
+    background: linear-gradient(transparent 70%, rgb(232, 232, 143) 70%);
+}
