@@ -198,7 +198,75 @@ let data = {
     ]
   }
 };
+let div = document.querySelector('div#result');
+let h1 = document.createElement('h1');
+h1.textContent = 'グルメ情報(検索結果は2件)';
+div.insertAdjacentElement('beforebegin', h1);
+let h2 = document.createElement('h2');
+h2.textContent = '検索結果1件目';
+div.insertAdjacentElement('beforeend', h2);
 
+let ul = document.createElement('ul');
+let li = document.createElement('li');
+li.textContent = '名前: 武蔵家 大宮店';
+let li1 = document.createElement('li');
+li1.textContent = 'アクセス: 大宮駅東口を出てすぐ左にあります';
+let li2 = document.createElement('li');
+li2.textContent = '住所: 埼玉県さいたま市大宮区大門町1-92-7 ハイカラ堂ビル 1F';
+let li3 = document.createElement('li');
+li3.textContent = '予算: ~999円';
+let li4 = document.createElement('li');
+li4.textContent = 'ジャンル: ラーメン';
+let li5 = document.createElement('li');
+li5.textContent = '営業時間: 月・火・水・木 11:00 - 23:00 金・土・日 07:00 - 23:00';
+let li6 = document.createElement('li');
+li6.textContent = '最寄駅: 大宮駅';
+let li7 = document.createElement('li');
+li7.textContent = 'サブジャンル: 家系ラーメン';
+
+div.insertAdjacentElement('beforeend', ul);
+ul.insertAdjacentElement('beforeend', li);
+ul.insertAdjacentElement('beforeend', li1);
+ul.insertAdjacentElement('beforeend', li2);
+ul.insertAdjacentElement('beforeend', li3);
+ul.insertAdjacentElement('beforeend', li4);
+ul.insertAdjacentElement('beforeend', li5);
+ul.insertAdjacentElement('beforeend', li6);
+ul.insertAdjacentElement('beforeend', li7);
+
+let div1 = document.createElement('div');
+div.insertAdjacentElement('afterend', div1);
+let h2a = document.createElement('h2');
+h2a.textContent = '検索結果2件目';
+div1.insertAdjacentElement('beforeend', h2a);
+
+let ul0 = document.createElement('ul');
+let li0 = document.createElement('li');
+li0.textContent = '名前: 麺家 紫極';
+let li01 = document.createElement('li');
+li01.textContent = 'アクセス: さいたま新都心駅を出てしまむら本社の方面を500mほど先にあります';
+let li02 = document.createElement('li');
+li02.textContent = '住所: 埼玉県さいたま市大宮区北袋町1-328-2';
+let li03 = document.createElement('li');
+li03.textContent = '予算: ~999円';
+let li04 = document.createElement('li');
+li04.textContent = 'ジャンル: ラーメン';
+let li05 = document.createElement('li');
+li05.textContent = '営業時間: 月・火・水・木・金・土 11:00 - 15:00 17:00 - 21:00 日・祝日 11:00 - 20:00';
+let li06 = document.createElement('li');
+li06.textContent = '最寄駅: さいたま新都心駅';
+let li07 = document.createElement('li');
+li07.textContent = 'サブジャンル: 家系ラーメン';
+
+div1.insertAdjacentElement('beforeend', ul0);
+ul0.insertAdjacentElement('beforeend', li0);
+ul0.insertAdjacentElement('beforeend', li01);
+ul0.insertAdjacentElement('beforeend', li02);
+ul0.insertAdjacentElement('beforeend', li03);
+ul0.insertAdjacentElement('beforeend', li04);
+ul0.insertAdjacentElement('beforeend', li05);
+ul0.insertAdjacentElement('beforeend', li06);
+ul0.insertAdjacentElement('beforeend', li07);
 /////////// 課題3-2 ここからプログラムを書こう
 
 console.log("アクセス: " + data.results.shop[0].access);
