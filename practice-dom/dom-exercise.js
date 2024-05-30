@@ -42,12 +42,17 @@ p7.setAttribute('src', 'hanako.png');
 p6.insertAdjacentElement('beforeend', p7);
 div.insertAdjacentElement('beforeend', p6);
 // 練習4-4 箇条書き削除プログラム
-let a = document.querySelectorAll('ul#location');
+let a = document.querySelectorAll('ul#location>li');
 for (let m of a){
 	m.remove();
 } 
 // 練習4-5 箇条書き追加プログラム
-let dl document.createElement('dl');
-for (let n of campus){
-
+// let dl = document.createElement('dl');
+// dl.insertAdjacentElement('afterend', h2);
+for (let n of data){
+	let ul = document.querySelector('ul#location');
+	let li = document.createElement('li');
+	li.textContent = n.name + '...' + n.lat + n.lng;
+	ul.insertAdjacentElement('beforeend', li);
 }
+
