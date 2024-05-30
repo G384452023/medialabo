@@ -201,3 +201,17 @@ let data = {
 
 /////////// 課題3-2 ここからプログラムを書こう
 
+console.log("アクセス: " + data.results.shop[0].access);
+console.log("住所: " + data.results.shop[0].address);
+console.log("予算: " + data.results.shop[0].budget.average);
+console.log("ジャンル: " + data.results.shop[0].genre.name);
+console.log("営業時間: " + data.results.shop[0].open);
+console.log("最寄駅: " + data.results.shop[0].station_name);
+console.log("サブジャンル: " + data.results.shop[0].sub_genre.name);
+console.log("アクセス: " + data.results.shop[1].access);
+console.log("住所: " + data.results.shop[1].address);
+console.log("予算: " + data.results.shop[1].budget.average);
+console.log("ジャンル: " + data.results.shop[1].genre.name);
+console.log("営業時間: " + data.results.shop[1].open);
+console.log("最寄駅: " + data.results.shop[1].station_name);
+console.log("サブジャンル: " + data.results.shop[1].sub_genre.name);
