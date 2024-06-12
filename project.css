@@ -1,5 +1,6 @@
 body {
     font-feature-settings: "smcp", "zero";
+    background-color: #CCFFFF;
 }
 div {
     padding: 0.5em 1em;
@@ -8,6 +9,7 @@ div {
     background: #fff8e8;
     border-left: solid 10px #ffc06e;
 }
-h1 {
+
+h2 {
     background: linear-gradient(transparent , #ffc06e );
 }
