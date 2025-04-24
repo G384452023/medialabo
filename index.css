@@ -1,28 +1,43 @@
 body {
     font-family: Georgia, serif;
-    margin: 25px;
+    background-color: rgb(24, 27, 2);
 }
 div {
     padding: 0.5em 1em;
     margin: 2em 0;
-    background: #FFF;
-    border: solid 3px #6091d3;/*線*/
-    border-radius: 10px;/*角の丸み*/
+    background: gray;
+    border: solid 3px yellow;
+    border-radius: 10px;
 }
 h1 {
-    text-shadow: navy 1px 0 10px;
-	color: white;
+    text-shadow: yellow 1px 0 10px;
+	margin: 25px;color: white;
 }
 h2 {
-    color: #010079;
-    text-shadow: 0 0 5px white;
+    color: black;  
     padding: 0.3em 0.5em;
-    background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
-    background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    background: -webkit-repeating-linear-gradient(-45deg, #8ba459, #f8ffcc 3px,#f9ffe9 3px, #f9ffe9 7px);
+    background: repeating-linear-gradient(-45deg, #8ba459, #f8ffcc 3px,#f9ffe9 3px, #f9ffe9 7px);
 
 }
 h3 {
-    outline: thick double #32a1ce;
+    outline: thick double yellow;
     margin-block: 10px 20px;
     writing-mode: horizontal-tb;
+    color: yellow;
 }
+p {
+    color: yellow;
+
+}
+a:link {
+    color: yellowgreen;
+  }
+  
+a:visited {
+    color: yellowgreen;
+  }
+
+a:hover {
+    text-decoration: none;
+  }
