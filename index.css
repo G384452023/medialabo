@@ -1,0 +1,28 @@
+body {
+    font-family: Georgia, serif;
+    margin: 25px;
+}
+div {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+h1 {
+    text-shadow: navy 1px 0 10px;
+	color: white;
+}
+h2 {
+    color: #010079;
+    text-shadow: 0 0 5px white;
+    padding: 0.3em 0.5em;
+    background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+
+}
+h3 {
+    outline: thick double #32a1ce;
+    margin-block: 10px 20px;
+    writing-mode: horizontal-tb;
+}
