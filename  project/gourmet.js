@@ -17,6 +17,15 @@ function print(data) {
   console.log("サブジャンル: " + data.results.shop[1].sub_genre.name);
 }
 
+//3-2
+b = document.querySelector('button#kensaku');
+b.addEventListener('click', greeting);
+function greeting() {
+    let a = document.querySelector('input[name="kaitou"]');  
+    kaitou = a.value;
+    console.log('検索キー: ' + kaitou);
+}
+
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
 
