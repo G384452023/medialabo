@@ -28,7 +28,62 @@ function greeting() {
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+  let resultDiv = document.querySelector('div#result');
+  let p1 = document.createElement('p');
+  p1.textContent = 'アクセス: ' + data.results.shop[0].access;
+  resultDiv.insertAdjacentElement('beforeend', p1);
 
+  let p2 = document.createElement('p');
+  p2.textContent = "住所: " + data.results.shop[0].address;
+  resultDiv.insertAdjacentElement('beforeend', p2);
+
+  let p3 = document.createElement('p');
+  p3.textContent = "予算: " + data.results.shop[0].budget.average;
+  resultDiv.insertAdjacentElement('beforeend', p3);
+
+  let p4 = document.createElement('p');
+  p4.textContent = "住所: " + data.results.shop[0].address;
+  resultDiv.insertAdjacentElement('beforeend', p4);
+
+  let p5 = document.createElement('p');
+  p5.textContent = "ジャンル: " + data.results.shop[0].genre.name;
+  resultDiv.insertAdjacentElement('beforeend', p5);
+
+  let p6 = document.createElement('p');
+  p6.textContent = "営業時間: " + data.results.shop[0].open;
+  resultDiv.insertAdjacentElement('beforeend', p6);
+
+  let p7 = document.createElement('p');
+  p7.textContent = "最寄駅: " + data.results.shop[0].station_name;
+  resultDiv.insertAdjacentElement('beforeend', p7);
+
+  let p8 = document.createElement('p');
+  p8.textContent = "サブジャンル: " + data.results.shop[0].sub_genre.name;
+  resultDiv.insertAdjacentElement('beforeend', p8);
+
+  let p9 = document.createElement('p');
+  p9.textContent = "アクセス: " + data.results.shop[1].access;
+  resultDiv.insertAdjacentElement('beforeend', p9);
+
+  let p10 = document.createElement('p');
+  p10.textContent = "予算: " + data.results.shop[1].budget.average;
+  resultDiv.insertAdjacentElement('beforeend', p10);
+
+  let p11 = document.createElement('p');
+  p11.textContent = "ジャンル: " + data.results.shop[1].genre.name;
+  resultDiv.insertAdjacentElement('beforeend', p11);
+
+  let p12 = document.createElement('p');
+  p12.textContent = "営業時間: " + data.results.shop[1].open;
+  resultDiv.insertAdjacentElement('beforeend', p12);
+
+  let p13 = document.createElement('p');
+  p13.textContent = "最寄駅: " + data.results.shop[1].station_name;
+  resultDiv.insertAdjacentElement('beforeend', p13);
+
+  let p14 = document.createElement('p');
+  p14.textContent = "サブジャンル: " + data.results.shop[1].sub_genre.name;
+  resultDiv.insertAdjacentElement('beforeend', p14);
 }
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
