@@ -42,27 +42,27 @@ function printDom(data) {
   resultDiv.insertAdjacentElement('beforeend', p3);
 
   let p4 = document.createElement('p');
-  p4.textContent = "住所: " + data.results.shop[0].address;
+  p4.textContent = "ジャンル: " + data.results.shop[0].genre.name;
   resultDiv.insertAdjacentElement('beforeend', p4);
 
   let p5 = document.createElement('p');
-  p5.textContent = "ジャンル: " + data.results.shop[0].genre.name;
+  p5.textContent = "営業時間: " + data.results.shop[0].open;
   resultDiv.insertAdjacentElement('beforeend', p5);
 
   let p6 = document.createElement('p');
-  p6.textContent = "営業時間: " + data.results.shop[0].open;
+  p6.textContent = "最寄駅: " + data.results.shop[0].station_name;
   resultDiv.insertAdjacentElement('beforeend', p6);
 
   let p7 = document.createElement('p');
-  p7.textContent = "最寄駅: " + data.results.shop[0].station_name;
+  p7.textContent = "サブジャンル: " + data.results.shop[0].sub_genre.name;
   resultDiv.insertAdjacentElement('beforeend', p7);
 
   let p8 = document.createElement('p');
-  p8.textContent = "サブジャンル: " + data.results.shop[0].sub_genre.name;
+  p8.textContent = "アクセス: " + data.results.shop[1].access;
   resultDiv.insertAdjacentElement('beforeend', p8);
 
   let p9 = document.createElement('p');
-  p9.textContent = "アクセス: " + data.results.shop[1].access;
+  p9.textContent = "住所: " + data.results.shop[1].address;
   resultDiv.insertAdjacentElement('beforeend', p9);
 
   let p10 = document.createElement('p');
