@@ -1,0 +1,25 @@
+body {
+    background-color:#FFFFCC;
+}
+
+h1 {
+    color: white;
+    border-bottom-style: dotted;
+    border-color: red;
+    text-shadow: 2px 2px 4px red;
+}
+
+div {
+    border: 10px ridge #f00;
+    background-color: #ff0;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+div p{
+    font-family: Georgia, serif;
+    border-bottom-style: groove;
+    border-color: pink;
+}
