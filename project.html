@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="gourmet.js" defer></script>
+  </head>
+  <body>
+    <!-- <h1>ラーメン情報（検索結果は2件）</h1>
+        <div>
+            <h2>検索結果1件目</h2>
+            <ul>
+                <li>名前: 尾又家</li>
+                <li>住所: 東京都八王子市明神町4-7-2 内藤落合ビル 1F</li>
+                <li>予算: ￥1,000～￥1,999</li>
+                <li>アクセス: 京王線「京王八王子駅」2出口より、徒歩0分</li>
+                <li>ジャンル: ラーメン</li>
+                <li>営業時間: 月・火・水・木・金・土
+
+                    11:00 - 16:00
+                    17:00 - 23:00</li>
+                <li>最寄駅: 京王八王子</li>
+            </ul>
+        </div>
+        <div>
+            <h2>検索結果1件目</h2>
+            <ul>
+                <li>名前: 麺家 たっとび</li>
+                <li>住所: 東京都立川市錦町1-2-16 立川らーめんたま館 1F</li>
+                <li>予算: ￥1,000～￥1,999</li>
+                <li>アクセス: 立川駅から243m</li>
+                <li>ジャンル: ラーメン</li>
+                <li>営業時間: 11:00 - 22:00
+                    通し営業</li>
+                <li>最寄駅: 立川</li>
+            </ul>
+        </div> -->
+        <h1>グルメ検索結果</h1>
+            <p>
+                検索キー:
+                <!-- <input type="text" name="kaitou" id="kaitou" size="8"> -->
+                <lavel for="kensaku1"></lavel>
+                <select name = "genre" id="genre">
+                <option value="">ジャンルを選んでください</option>
+                <option value="01">居酒屋</option>
+                <option value="02">ダイニングバー・バル</option>
+                <option value="03">創作料理</option>
+                <option value="04">和食</option>
+                <option value="05">洋食</option>
+                <option value="06">イタリアン・フレンチ</option>
+                <option value="07">中華</option>
+                <option value="08">焼肉・ホルモン</option>
+                <option value="09">アジア・エスニック料理</option>
+                <option value="10">各国料理</option>
+                <option value="11">カラオケパーティ</option>
+                <option value="12">バー・カクテル</option>
+                <option value="13">ラーメン</option>
+                <option value="14">カフェ・スイーツ</option>
+                <option value="15">その他グルメ</option>
+                <option value="16">お好み焼き・もんじゃ</option>
+                <option value="17">韓国料理</option></select>
+                <button id="kensaku">検索</button>
+            </p>
+            
+
+
+            <div id="result">
+                <p>検索前</p>
+            </div>
+
+
+  </body>
+</html>
